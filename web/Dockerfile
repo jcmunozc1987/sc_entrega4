@@ -12,7 +12,7 @@ COPY . /app
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 # Expone el puerto en el que se ejecutará la aplicación Streamlit
-EXPOSE 8501
+EXPOSE 8080
 
 # Comando para ejecutar la aplicación Streamlit
 CMD ["streamlit", "run", "Login.py"]

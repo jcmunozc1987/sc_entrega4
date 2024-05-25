@@ -20,5 +20,7 @@ COPY . /
 # Instala las dependencias
 RUN pip install --no-cache-dir --upgrade -r /requirements.txt
 
+EXPOSE 8080
+
 # Define el comando predeterminado para ejecutar tu programa cuando se inicie el contenedor
 CMD ["python", "converter.py"]
